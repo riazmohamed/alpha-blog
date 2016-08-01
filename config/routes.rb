@@ -8,6 +8,10 @@ Rails.application.routes.draw do
   
   resources :articles
   
+  get 'signup', to: 'users#new'
+  
+  resources :users, except: [:new]
+  
   
   # get 'pages/home', to: 'pages#home'
   # get 'pages/about', to: 'pages#about'
