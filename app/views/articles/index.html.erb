@@ -1,5 +1,9 @@
 <div class="container center">
   <h1>Article Listing</h1>
+  
+  <div class="center pagination">
+    <%= will_paginate @articles %>
+  </div>
 
   <%= render 'article', obj: @articles %>
 
